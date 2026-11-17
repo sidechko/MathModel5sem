@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>LR_3 — интегрирование (прямоугольники / Монте-Карло / аналитика)</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    html, body { margin: 0; padding: 0; background: #fff; font-family: sans-serif; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 10px; }
+    pre#log {
+      background: #f4f4f4; padding: 10px; border-radius: 4px;
+      max-height: 260px; overflow: auto; font-size: 12px;
+      white-space: pre-wrap;
+    }
+    .fig { width: 100%; height: 520px; margin-bottom: 20px; }
+    .fig.tall { height: 720px; }
+    h2 { font-size: 16px; margin: 18px 0 6px; color: #333; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Лог (print / таблица)</h2>
+  <pre id="log"></pre>
+
+  <h2>Пункт 1. A1(t) и A2(t)</h2>
+  <div id="fig1" class="fig"></div>
+
+  <h2>Пункт 3. Гистограмма и график разности</h2>
+  <div id="fig3" class="fig"></div>
+
+  <h2>Пункт 4. Сходимость средних прямоугольников</h2>
+  <div id="fig4" class="fig"></div>
+
+  <h2>Пункт 5. Монте-Карло — визуализация</h2>
+  <div id="fig5" class="fig"></div>
+
+  <h2>Пункт 5. Монте-Карло — сходимость</h2>
+  <div id="fig6" class="fig tall"></div>
+</div>
+<script src="LR_3_javascript.js"></script>
+</body>
+</html>
